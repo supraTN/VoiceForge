@@ -1,0 +1,29 @@
+# HuggingFace model caches (several GB — downloaded at runtime or via volume)
+data/hf-cache/
+
+# User-generated data (mounted as volumes in production)
+data/videos/
+data/voices/
+
+# Temporary uploads
+tmp_uploads/
+
+# Frontend (served separately or built separately)
+tts-frontend/
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Residual files
+sortie.wav
+*.wav
+*.mp4
+
+# Git / IDE
+.git/
+.gitignore
+.vscode/
+.idea/

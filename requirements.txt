@@ -1,0 +1,28 @@
+# Web framework
+fastapi
+uvicorn[standard]
+pydantic>=2.0.0
+python-multipart  # required by FastAPI for Form / File / UploadFile
+aiofiles          # required by FastAPI StaticFiles
+
+# Audio / TTS
+kokoro
+soundfile
+numpy
+
+# Voice cloning (Coqui XTTS v2)
+TTS>=0.22.0
+
+# Speech recognition
+faster-whisper==1.0.3
+
+# Machine translation
+# Upper bound: TTS (Coqui) uses BeamSearchScorer removed in transformers 4.40+
+transformers>=4.33.0,<4.40.0
+sentencepiece     # tokenizer required by facebook/m2m100_418M
+
+# Deep learning (CPU build by default; swap for torch+cu121 for GPU)
+# Upper bound: PyTorch 2.6 changed torch.load default to weights_only=True,
+# which breaks Coqui TTS custom checkpoint classes.
+torch>=2.0.0,<2.6.0
+torchaudio>=2.0.0,<2.6.0

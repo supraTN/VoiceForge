@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+.eggs/
+dist/
+build/
+.venv/
+venv/
+env/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# AI model caches (can be several GB)
+data/hf-cache/
+
+# User-generated data (audio, video, voices)
+data/videos/
+data/voices/
+
+# Temporary uploads
+tmp_uploads/
+
+# Build artifacts / residual files
+sortie.wav
+*.wav
+*.mp4
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/*
+!.vscode/extensions.json
+.idea/
+
+# Frontend
+tts-frontend/node_modules/
+tts-frontend/dist/
+tts-frontend/dist-ssr/
