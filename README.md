@@ -3,6 +3,12 @@
 Projet full-stack qui combine synthese vocale, clonage de voix et doublage video automatique.
 Realise dans le cadre d'un projet scolaire.
 
+## Apercu
+
+![Landing page — Text to Speech](docs/Landing_page.png)
+
+![Video Dubbing](docs/Video_translation.png)
+
 ## Fonctionnalites
 
 ### Text-to-Speech (Kokoro)
